@@ -24,7 +24,7 @@ $(window).scroll(function(event) {
       (divToAnimate.data('timeout')) ? holdAnimation(direction): divToAnimate.addClass('animated ' + divToAnimate.data(direction));
     };
 
-    if ((screenBotton > offsetTop && screenBotton < offsetBottom) && lastScrollTop < st) {
+    if ((screenBotton > offsetTop && screenBotton < offsetTop + 100) && lastScrollTop < st) {
       activeAntimation('down');
     } else if ((screenBotton > offsetBottom && screenTop < offsetBottom) && lastScrollTop > st) {
       activeAntimation('up');
