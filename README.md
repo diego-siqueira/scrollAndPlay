@@ -7,9 +7,10 @@ in the attribute data-down (for the animations when scroll down) and data-up (fo
 The animations are activate when scroll reaches the parent of the element.
 
 ex:
-```jquery
-<div>
+```javascript
+<div> <=Parent object defines the scroll limit to activate animation
   <div class="revealOnScroll" data-down="slideInUp" data-up="slideInDown" data-timeout="0">
+    <img src="img1.png" alt="image 1" class="revealOnScroll" data-up="slideInLeft" data-timeout="0">
     <h2>Title</h2>
     <p>Content text</p>
   </div>
@@ -18,4 +19,5 @@ ex:
 
 
  1: In the demo page I used also "animate.css" to define the animations.
+ 
  2: Don't forget to load JQuery. :)
